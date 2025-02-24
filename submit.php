@@ -4,7 +4,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $postmarkApiKey = "9fab92ff-e3cf-466d-b213-5f7baab1a6ce";
     $from = "info@saboura.net";
-   $adminEmails = "hajerboukhari2018@gmail.com"; 
+   $adminEmails = "saboura.net@gmail.com"; 
    // $adminEmails = "ihebbenmonsef@gmail.com";// Admin email to notify when user completes form
 
     // Extract data from the POST request
