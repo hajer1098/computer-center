@@ -43,6 +43,8 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     </head>
 
     <body>
@@ -669,7 +671,7 @@ function validateAndSendMessage() {
     .then(response => response.text())
     .then(result => {
         console.log(result);
-        alert('Message envoyé avec succès !');
+        showAlert() 
 
         // Réinitialiser les champs du formulaire
         document.getElementById('name').value = '';
@@ -682,6 +684,21 @@ function validateAndSendMessage() {
         alert('Échec de l\'envoi du message.');
     });
 }
+
+
+
+function showAlert() {
+    Swal.fire({
+      title: 'Success!',
+      text: 'Your action was successful.',
+      icon: 'success',
+      confirmButtonText: 'OK',
+      background: '#f0f8ff',
+      color: '#333',
+      confirmButtonColor: '#3085d6',
+      borderRadius: '10px'
+    });
+  }
     </script>
 
     </body>
